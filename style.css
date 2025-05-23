@@ -1,0 +1,160 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 130%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url("https://cdn.glitch.global/a1e927eb-43f5-4725-931f-9021a664b70d/theocean.jpg?v=1740266747495");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::selection {
+    background: #CED3DC;
+}
+
+h1 {
+    text-align: center;
+    background: #BF4E30;
+    color: #d5dbc9;
+}
+
+h2 {
+    background: #36453B;
+    color: #d5dbc9;
+}
+
+h3 {
+    color: #d5dbc9;
+    background: #515751;
+    text-align: center;
+}
+
+.all {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right {
+    width: 33%;
+    background: #36453B;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.middle {
+    width: 33%;
+    text-align: center;
+    background: #515751;
+}
+
+.left {
+    width: 33%;
+    background: #36453B;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+article {
+    background: #9DA3A4;
+}
+
+#images {
+    overflow-y: auto;
+    max-height: 850px;
+}
+
+#aboutMe {
+    font-weight: bold;
+}
+
+#gallery {
+    background: none;
+}
+
+.buttons {
+    text-align: center;
+    background: none;
+}
+
+img {
+    width: 70%;
+    border: 5px solid #BF4E30;
+    border-radius: 10%;
+    transition: width 0.2s ease;
+}
+
+p {
+    color: #36453B;
+    padding-left: 3%;
+    transition: background 0.3s ease;
+}
+
+p:hover {
+    background: #afb4b5;
+}
+
+li {
+    color: #36453B;
+    transition: background 0.3s ease;
+}
+
+li:hover {
+    background: #afb4b5;
+}
+
+a {
+    color: #515751;
+}
+
+a:hover {
+    color: #36453B;
+}
+
+button {
+    color: #36453B;
+    font-family: inherit;
+    font-size: 130%;
+    font-weight: bold;
+    border-width: 8px;
+    border-color: #BF4E30;
+    background-color: #c9843a;
+    transition: opacity 0.1s ease;
+}
+
+button:hover {
+    opacity: 50%
+}
+
+small {
+    opacity: 50%;
+}
+
+hr {
+    background: #BF4E30;
+    height: 20px;
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BF4E30;
+}
+
+#hidden {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+    cursor: inherit;
+}
+
+.cats {
+    width: 30%;
+
+}
+
+.cats:hover {
+    width: 30%;
+}
