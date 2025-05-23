@@ -14,18 +14,18 @@ body {
 
 h1 {
     text-align: center;
-    background: #BF4E30;
-    color: #d5dbc9;
+    background: #f41004;
+    color: #060d99;
 }
 
 h2 {
-    background: #36453B;
-    color: #d5dbc9;
+    background: #25aa00;
+    color: #060d99;
 }
 
 h3 {
-    color: #d5dbc9;
-    background: #515751;
+    color: #060d99;
+    background: #7aaa00;
     text-align: center;
 }
 
@@ -36,7 +36,7 @@ h3 {
 
 .right {
     width: 33%;
-    background: #36453B;
+    background: #25aa00;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
 }
@@ -44,18 +44,18 @@ h3 {
 .middle {
     width: 33%;
     text-align: center;
-    background: #515751;
+    background: #7aaa00;
 }
 
 .left {
     width: 33%;
-    background: #36453B;
+    background: #25aa00;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
 }
 
 article {
-    background: #9DA3A4;
+    background: #ffee38;
 }
 
 #images {
@@ -78,46 +78,46 @@ article {
 
 img {
     width: 70%;
-    border: 5px solid #BF4E30;
+    border: 5px solid #f41004;
     border-radius: 10%;
     transition: width 0.2s ease;
 }
 
 p {
-    color: #36453B;
+    color: #25aa00;
     padding-left: 3%;
     transition: background 0.3s ease;
 }
 
 p:hover {
-    background: #afb4b5;
+    background: #ffc430;
 }
 
 li {
-    color: #36453B;
+    color: #25aa00;
     transition: background 0.3s ease;
 }
 
 li:hover {
-    background: #afb4b5;
+    background: #ffc430;
 }
 
 a {
-    color: #515751;
+    color: #7aaa00;
 }
 
 a:hover {
-    color: #36453B;
+    color: #25aa00;
 }
 
 button {
-    color: #36453B;
+    color: #25aa00;
     font-family: inherit;
     font-size: 130%;
     font-weight: bold;
     border-width: 8px;
-    border-color: #BF4E30;
-    background-color: #c9843a;
+    border-color: #f41004;
+    background-color: #f41004;
     transition: opacity 0.1s ease;
 }
 
@@ -130,7 +130,7 @@ small {
 }
 
 hr {
-    background: #BF4E30;
+    background: #f41004;
     height: 20px;
     border: none;
 }
@@ -140,7 +140,7 @@ hr {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #BF4E30;
+    background: #f41004;
 }
 
 #hidden {
