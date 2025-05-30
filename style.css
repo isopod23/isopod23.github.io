@@ -1,138 +1,101 @@
+:root {
+    /* BACKGROUND */
+    --bgmain: #e8e5de;
+    --bgaccent: #355377;
+    --bgaccent2: #398888;
+    /* FONT */
+    --fmain: #27385f;
+    --fsecondary: var(--bgmain);
+    /* SIDENAV */
+    --leftwidth: 250px;
+}
+
 body {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 130%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BMTYzMDU5Mzk3OF5BMl5BanBnXkFtZTYwMzg2NTQ3._V1_FMjpg_UX1000_.jpg&f=1&nofb=1&ipt=8998e5468854027fd7072875025ba33b5c2b879f6a0d4f7edd54ab21311dbc0c");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-::selection {
-    background: #0010eb;
-}
-
-h1 {
-    text-align: center;
-    background: #f41004;
-    color: #060d99;
-}
-
-h2 {
-    background: #25aa00;
-    color: #060d99;
-}
-
-h3 {
-    color: #060d99;
-    background: #7aaa00;
-    text-align: center;
-}
-
-.all {
-    display: flex;
-    justify-content: space-around;
-}
-
-.right {
-    width: 33%;
-    background: #25aa00;
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 5%;
-}
-
-.middle {
-    width: 33%;
-    text-align: center;
-    background: #7aaa00;
-}
-
-.left {
-    width: 33%;
-    background: #25aa00;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
-}
-
-article {
-    background: #ffee38;
-}
-
-#images {
-    overflow-y: auto;
-    max-height: 850px;
-}
-
-#aboutMe {
-    font-weight: bold;
-}
-
-#gallery {
-    background: none;
-}
-
-.buttons {
-    text-align: center;
-    background: none;
-}
-
-img {
-    width: 70%;
-    border: 5px solid #f41004;
-    border-radius: 10%;
-    transition: width 0.2s ease;
-}
-
-p {
-    color: #25aa00;
-    padding-left: 3%;
-    transition: background 0.3s ease;
-}
-
-p:hover {
-    background: #ffc430;
-}
-
-li {
-    color: #25aa00;
-    transition: background 0.3s ease;
-}
-
-li:hover {
-    background: #ffc430;
-}
-
-a {
-    color: #7aaa00;
-}
-
-a:hover {
-    color: #25aa00;
+    font-size: 20px;
+    background-color: var(--bgmain);
+    color: var(--fmain);
+    font-family: "Lucida Console", "Courier New", monospace;
+    overflow-x: hidden;
 }
 
 button {
-    color: #060d99;
+    background-color: var(--bgaccent);
+    border: 0;
+    font-size: 40px;
+    height: 100px;
+    width: 100%;
+    color: var(--fsecondary);
     font-family: inherit;
-    font-size: 130%;
-    font-weight: bold;
-    border-width: 8px;
-    border-color: #f41004;
-    background-color: #f41004;
-    transition: opacity 0.1s ease;
+    cursor: pointer;
+    transition: 0.1s ease;
 }
 
 button:hover {
-    opacity: 50%
+    background-color: var(--bgaccent2);
 }
 
-small {
-    opacity: 50%;
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--fmain);
+}
+
+h3 {
+    color: var(--fmain);
+}
+
+#images img {
+    height: 250px;
+}
+
+.main div {
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+a {
+    color: #7b91a0;
 }
 
 hr {
-    background: #f41004;
-    height: 20px;
-    border: none;
+    border: 5px solid var(--bgaccent);
+    width: 100%;
+}
+
+.sidenav hr {
+    border: 1px solid var(--bgmain);
+}
+
+#other p {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#other a {
+    opacity: 50%;
+    font-size: 15px;
+}
+
+#manic img {
+    height: 270px;
+}
+
+.sidenav {
+    height: 100%;
+    width: var(--leftwidth);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--bgaccent);
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.main {
+    margin-left: var(--leftwidth);
+
 }
 
 ::-webkit-scrollbar {
@@ -140,21 +103,42 @@ hr {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f41004;
+    background-color: var(--bgaccent2);
 }
 
-#hidden {
-    color: inherit;
-    text-decoration: inherit;
-    font-size: inherit;
-    cursor: inherit;
+#faded {
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    position: fixed;
+    opacity: 10%;
+    z-index: -4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.cats {
-    width: 30%;
+@media screen and (max-width: 500px) {
+    :root {
+        --leftwidth: 150px
+    }
 
-}
+    .main div {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-.cats:hover {
-    width: 30%;
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    img {
+        max-height: 150px;
+    }
 }
