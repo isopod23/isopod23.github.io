@@ -129,7 +129,13 @@ hr {
     .main {
         padding-left: var(--leftwidth);
         padding-right: 0;
-        margin-left: var(--leftwidth);
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main div {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .sidenav {
