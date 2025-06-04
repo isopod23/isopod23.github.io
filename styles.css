@@ -6,8 +6,9 @@
     /* FONT */
     --fmain: #27385f;
     --fsecondary: var(--bgmain);
-    /* SIDENAV */
+    /* SIZES */
     --leftwidth: 250px;
+    --topheight: 100px;
 }
 
 body {
@@ -16,6 +17,10 @@ body {
     color: var(--fmain);
     font-family: "Lucida Console", "Courier New", monospace;
     overflow-x: hidden;
+}
+
+body::selection {
+    background: #7b91a0;
 }
 
 button {
@@ -52,6 +57,31 @@ h3 {
     padding-bottom: 100px;
     padding-left: 50px;
     padding-right: 100px;
+}
+
+.top {
+    height: var(--topheight);
+    padding-left: var(--leftwidth);
+    padding-right: 0;
+    margin: 0;
+    text-overflow: clip;
+    white-space: nowrap;
+    transition: all 0.5s;
+    position: fixed;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--bgmain);
+    background-size:100% 100%;
+}
+
+
+h1 {
+    color: var(--bgaccent2);
+    text-align: center;
+
 }
 
 a {
@@ -95,7 +125,7 @@ hr {
 
 .main {
     margin-left: var(--leftwidth);
-
+    padding-top: var(--topheight);
 }
 
 ::-webkit-scrollbar {
@@ -104,6 +134,10 @@ hr {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--bgaccent2);
+}
+
+#icon {
+    width: var(--leftwidth);
 }
 
 #faded {
@@ -123,7 +157,6 @@ hr {
 
     body {
         margin-right: 0;
-        overflow-x: auto;
     }
 
     .main {
@@ -140,11 +173,11 @@ hr {
 
     .sidenav {
         padding-top: 15px;
-
+        font-size: 10px;
     }
 
-    .button {
-        font-size: 10px;
+    h1 {
+        font-size: 30px;
     }
 
     h2 {
@@ -152,6 +185,6 @@ hr {
     }
 
     img {
-        max-height: 150px;
+        max-height: 100px;
     }
 }
