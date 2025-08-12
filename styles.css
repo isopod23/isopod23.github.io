@@ -23,6 +23,12 @@ body::selection {
     background: #7b91a0;
 }
 
+.btn {
+    border: 0;
+    background-color: var(--bgaccent);
+    color: var(--fsecondary);
+}
+
 .sidenav button {
     background-color: var(--bgaccent);
     border: 0;

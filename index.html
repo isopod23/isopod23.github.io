@@ -152,16 +152,17 @@
                 .I'm a 17 year old from Latvia(🇱🇻), born on the 23rd of May in 2008 and I go by any pronouns
                 <br>
                 <br>
-                .I love <a href="#spotify">music</a>, my current most played artists include <img src="textIcons/radiohead.png"
-                    alt="Radiohead" class="textIcon"> and <img src="textIcons/Duster.png" alt="Duster" class="textIcon"> and many
+                .I love <a href="#spotify">music</a>, my current most played artists include <img
+                    src="textIcons/radiohead.png" alt="Radiohead" class="textIcon"> and <img src="textIcons/Duster.png"
+                    alt="Duster" class="textIcon"> and many
                 other various artists
                 <br>
                 <br>
                 .Alongside watching old movies I enjoy reading, although I don't manage to find the time for that as
                 much
                 <br>
-                .One novel that stuck with me was <a href="#oleander"><img src="textIcons/WhiteOleander.png" alt="White Oleander"
-                        class="textIcon"></a> by Janet Fitch
+                .One novel that stuck with me was <a href="#oleander"><img src="textIcons/WhiteOleander.png"
+                        alt="White Oleander" class="textIcon"></a> by Janet Fitch
                 <br>
                 .Recently read "Dziednieks" (The Quack) by the Polish author Tadeusz Dołęga-Mostowicz
                 <br>
@@ -174,8 +175,8 @@
                 .In traditional art I often use oil pastels (I love colors)
                 <br>
                 <br>
-                .<img src="textIcons/DiscoElysium.png" alt="Disco Elysium" class="textIcon"> and <img src="textIcons/Dredge.png"
-                    alt="Dredge" class="textIcon"> are my favorite videogames
+                .<img src="textIcons/DiscoElysium.png" alt="Disco Elysium" class="textIcon"> and <img
+                    src="textIcons/Dredge.png" alt="Dredge" class="textIcon"> are my favorite videogames
                 <br>
                 .I also play Minecraft, Roblox and Toontown Rewritten sometimes
                 <br>
@@ -188,6 +189,20 @@
                 This, The End of the F***ing World, The Last of Us and definitely others I'm forgetting
                 <br>
             </p>
+
+            <br>
+            <form action="https://formspree.io/f/xzzvovqb" method="POST">
+                <h3>Send me a message!</h3>
+                <label>
+                    Name or title:
+                    <input type="title" name="title">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit" class="btn">Send</button>
+            </form>
         </div>
         <hr>
         <div id="images">
@@ -197,7 +212,8 @@
             <img src="Drawings/I dare you to find me.png" alt="I dare you to find me">
             <img src="Drawings/dinner.png" alt="Dinner's ready">
             <img src="Drawings/pizza.png" alt="That wasn't it">
-            <img src="Drawings/perforatoru-klubs.png" alt="Perforatoru klubs" onmouseover="this.src='Drawings/perforatoru-klubs2.png'"
+            <img src="Drawings/perforatoru-klubs.png" alt="Perforatoru klubs"
+                onmouseover="this.src='Drawings/perforatoru-klubs2.png'"
                 onmouseout="this.src='Drawings/perforatoru-klubs.png'">
             <img src="Drawings/rat.png" alt="The rat is grateful">
             <img src="Drawings/kim-kitsuragi.png" alt="Kim Kitsuragi">
@@ -286,26 +302,26 @@
         <p>Coded with VSCode and GitHub by me</p>
     </div>
     <script>
-// Get the button
-let mybutton = document.getElementById("myBtn");
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
