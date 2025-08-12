@@ -27,6 +27,11 @@ body::selection {
     border: 0;
     background-color: var(--bgaccent);
     color: var(--fsecondary);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--bgaccent2);
 }
 
 .sidenav button {
@@ -55,14 +60,28 @@ h3 {
     color: var(--fmain);
 }
 
-#images img {
+#portrait {
+    float: right;
+    height: 500px;
+}
+
+#portrait img {
+    height: 500px;
+}
+
+#myFace img{
+    height: 350px;
+}
+
+
+#images #myArt img {
     height: 250px;
 }
 
 .main div {
     padding-bottom: 100px;
     padding-left: 50px;
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 .top {
@@ -189,6 +208,14 @@ hr {
         width: var(--leftwidth);
     }
 
+    #portrait {
+        height: 200px;
+    }
+
+    #portrait img {
+        height: 200px;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -229,5 +256,9 @@ hr {
 
     .top {
         padding-left: var(--leftwidth);
+    }
+
+    #portrait {
+        visibility: collapse;
     }
 }
